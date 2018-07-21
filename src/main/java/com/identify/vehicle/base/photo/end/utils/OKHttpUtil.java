@@ -1,4 +1,4 @@
-package com.identify.vehicl.base.photo.end.utils;
+package com.identify.vehicle.base.photo.end.utils;
 
 import okhttp3.*;
 

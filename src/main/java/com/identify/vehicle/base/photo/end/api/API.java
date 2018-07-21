@@ -1,9 +1,9 @@
-package com.identify.vehicl.base.photo.end.api;
+package com.identify.vehicle.base.photo.end.api;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.identify.vehicl.base.photo.end.entity.CarInfo;
-import com.identify.vehicl.base.photo.end.utils.OKHttpUtil;
+import com.identify.vehicle.base.photo.end.entity.CarInfo;
+import com.identify.vehicle.base.photo.end.utils.OKHttpUtil;
 import okhttp3.FormBody;
 import okhttp3.RequestBody;
 

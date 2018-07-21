@@ -1,4 +1,4 @@
-package com.identify.vehicl.base.photo.end;
+package com.identify.vehicle.base.photo.end;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

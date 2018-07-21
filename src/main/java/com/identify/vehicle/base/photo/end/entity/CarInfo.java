@@ -1,4 +1,4 @@
-package com.identify.vehicl.base.photo.end.entity;
+package com.identify.vehicle.base.photo.end.entity;
 
 public class CarInfo {
     private Double score;

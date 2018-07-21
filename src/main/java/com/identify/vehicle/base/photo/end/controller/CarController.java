@@ -1,7 +1,7 @@
-package com.identify.vehicl.base.photo.end.controller;
+package com.identify.vehicle.base.photo.end.controller;
 
-import com.identify.vehicl.base.photo.end.api.API;
-import com.identify.vehicl.base.photo.end.entity.CarInfo;
+import com.identify.vehicle.base.photo.end.api.API;
+import com.identify.vehicle.base.photo.end.entity.CarInfo;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -19,12 +19,12 @@ public class CarController {
     * 从客户端获取图片并转成base64
     * */
 
-    @RequestMapping(value = "/pic", method = RequestMethod.POST)
+    @RequestMapping(value = "/simple", method = RequestMethod.POST)
     public String wx_upload(HttpServletRequest request, HttpServletResponse response) throws Exception {
         return getBase64(request);
     }
 
-    @RequestMapping(value = "/car", method = RequestMethod.POST)
+    @RequestMapping(value = "/complex", method = RequestMethod.POST)
     public List<CarInfo> wx_upload_car(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String base64 = getBase64(request);
         MultipartHttpServletRequest params=((MultipartHttpServletRequest) request);
