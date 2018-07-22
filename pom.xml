@@ -71,7 +71,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>identifycar</finalName>
+		<finalName>iv</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
