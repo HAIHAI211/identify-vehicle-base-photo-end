@@ -1,8 +1,6 @@
 package com.identify.vehicle.base.photo.end.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.identify.vehicle.base.photo.end.api.API;
-import com.identify.vehicle.base.photo.end.entity.CarInfo;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -31,8 +29,6 @@ public class CarController {
         MultipartHttpServletRequest params=((MultipartHttpServletRequest) request);
         String token = params.getParameter("token");
         String num = params.getParameter("num");
-//        List<CarInfo> carInfoList = API.getCarInfo(base64, token);
-//        return carInfoList;
         return API.getCarInfo(base64, token, num);
     }
 
