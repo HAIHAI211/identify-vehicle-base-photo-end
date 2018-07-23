@@ -1,5 +1,6 @@
 package com.identify.vehicle.base.photo.end.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.identify.vehicle.base.photo.end.api.API;
 import com.identify.vehicle.base.photo.end.entity.CarInfo;
 import org.springframework.web.bind.annotation.*;
@@ -25,13 +26,14 @@ public class CarController {
     }
 
     @RequestMapping(value = "/complex", method = RequestMethod.POST)
-    public List<CarInfo> wx_upload_car(HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public String wx_upload_car(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String base64 = getBase64(request);
         MultipartHttpServletRequest params=((MultipartHttpServletRequest) request);
         String token = params.getParameter("token");
-        List<CarInfo> carInfoList = API.getCarInfo(base64, token);
-        System.out.println(carInfoList);
-        return carInfoList;
+        String num = params.getParameter("num");
+//        List<CarInfo> carInfoList = API.getCarInfo(base64, token);
+//        return carInfoList;
+        return API.getCarInfo(base64, token, num);
     }
 
 
